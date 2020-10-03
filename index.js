@@ -1,80 +1,16 @@
-// initiate inquirer and fs
+// initiate inquirer and fs, as well as the questions.js file
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
-// create an array of questions to pass to inquirer prompt
-//TODO: This may be put into a separate file and called upon with module.exports = thatFileName
-const questions = [
-  {
-    type: `input`,
-    message: `What is the title of your project?`,
-    name: `title`,
-  },
-  {
-    type: `input`,
-    message: `Provide a brief description of your project:`,
-    name: `description`,
-  },
-  {
-    type: `input`,
-    message: `What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.`,
-    name: `installation`,
-  },
-  {
-    type: `input`,
-    message: `Provide a brief description of how to use your application. Remember to add any screenshots/video walk throughs on your own!`,
-    name: `usage`,
-  },
-  {
-    type: `list`,
-    message: `What license will you be using?`,
-    name: `license`,
-    choices: [
-      `MIT`,
-      `GNU GPL v3`,
-      `Apache 2.0`,
-      `Placeholder, I prefer a different option`,
-    ],
-  },
-  {
-    type: `input`,
-    message: `Are you open to contributions? Please include any details you wish to provide potential contributors.`,
-    name: `contributing`,
-  },
-  {
-    type: `input`,
-    message: `If you have written tests for your application, please explain how to run them.`,
-    name: `tests`,
-  },
-  {
-    type: `input`,
-    message: `Please provide your GitHub username to direct questions.`,
-    name: `github`,
-  },
-  {
-    type: `input`,
-    message: `Please provide your email address to direct questions.`,
-    name: `email`,
-  },
-  {
-    type: `input`,
-    message: `What word you like your badge to say?`,
-    name: `message`,
-  },
-  {
-    type: `list`,
-    message: `What color would you like your badge?`,
-    choices: [`brightgreen`, `blue`, `blueviolet`, `red`],
-    name: `color`,
-  },
-];
+const questions = require (`./questions.js`)
+// const licenseChoice = require(`./license.js`)
 
 // use inquirer to prompt user with questions array/initialize program
 inquirer.prompt(questions).then((response) => {
   const shield = response.title.replace(/\s+/g, "");
   const shieldMess = response.message.replace(/\s+/g, "");
-
-// TODO:Licensing badge and display of selected license. This could be a different file.
+// license choices that you are prompted. The prompt determines the verbiage and badge that generate.
 let badgeLicense = ``;
+let licenseWords = ``;
 if (response.license === `MIT`) {
 badgeLicense = `[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 licenseWords = `
@@ -120,12 +56,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 `;
 } else {badgeLicense = `Placeholder text, user to update`, licenseWords = `Placeholder text, user to update`;}
-  
-// TODO: This can be in a different file
-// String to generate responses in MarkDown Format
+// String to generate responses in MarkDown format
 let readMe = `
 # ${response.title}
 ${badgeLicense}
+
+![${response.title}](https://img.shields.io/github/languages/top/${response.github}/${response.title})
 ## Description
 ${response.description}
 ## Table of Contents
@@ -156,7 +92,7 @@ For any questions please find me on GitHub or email me:
 `;
 
   // write file using template generated from readMe string
-  fs.writeFile("README.md", readMe, function (err) {
+  fs.writeFile("output/README.md", readMe, function (err) {
     if (err) {
       console.log(err);
     }
@@ -164,7 +100,8 @@ For any questions please find me on GitHub or email me:
   console.log("YAY YOU DID IT");
 });
 
-// TODO: Screencastify to create a walkthrough video to include link in my readme
-// TODO: alter readMe
-// TODO: refactor--create different js files
-// TODO: WHAT are they looking for in terms of unique badge for repo? Is what I did fine?
+
+
+
+
+
