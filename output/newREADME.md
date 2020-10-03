@@ -1,11 +1,10 @@
 
-# readmeGen
+# SAMPLE
 [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![readmeGen](https://img.shields.io/github/languages/top/caitlinbou/readmeGen)
+![SAMPLE](https://img.shields.io/github/languages/top/caitlinbou/SAMPLE)
 ## Description
-This program uses Node.js with the  inquirer npm package to prompt a series of questions in the terminal with the purpose of generating a quality readme to use with your own projects. Please follow the video link in the USAGE section for a quick walk through.
-
+This is an example of how to use me!
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -14,14 +13,12 @@ This program uses Node.js with the  inquirer npm package to prompt a series of q
 * [Tests](#Tests)
 * [Questions](#Questions)
 ## Installation
-This program requires that you install Node.js. From there, you must generate a package.json for the folder in which you are working. Do this with the "npm init" command. Next, run "npm install inquirer". Both the questions.js as well as the index.js files are required.
+obtain files, install node, npm init, npm install inquirer
 ## Usage 
-Once your installs are completed and all files are present, simply launch the terminal and type the command "node fileName.js". Answer the prompts with the verbiage you wish to have for your readme. Make any necessary edits directly within the resulting file.
-
-[Walkthrough Video](https://drive.google.com/file/d/1pqHIV3YjIamCrO_5OfzCa7Bo0fSEph23/view)
+WATCH THIS VIDEO
 ## License 
 
-Copyright 2020 Caitlin Bouroncle
+Copyright <YEAR> <COPYRIGHT HOLDER>
         
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         
@@ -30,9 +27,9 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contributing
-I welcome contributors, but please reach out to me to discuss any details.
+YAY!
 ## Tests
-I do not have any tests at this time.
+none at this time
 ## Questions
 For any questions please find me on GitHub or email me: 
 
@@ -40,4 +37,4 @@ For any questions please find me on GitHub or email me:
 
 [email contact](mailto:caitlin.bouroncle@gmail.com)
 
-![readmeGen](https://img.shields.io/static/v1?label=readmeGen&message=readmeEASY&color=blueviolet)
+![SAMPLE](https://img.shields.io/static/v1?label=SAMPLE&message=YAY!&color=blueviolet)

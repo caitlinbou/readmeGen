@@ -92,7 +92,7 @@ For any questions please find me on GitHub or email me:
 `;
 
   // write file using template generated from readMe string
-  fs.writeFile("output/README.md", readMe, function (err) {
+  fs.writeFile("output/newREADME.md", readMe, function (err) {
     if (err) {
       console.log(err);
     }
