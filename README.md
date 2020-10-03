@@ -19,6 +19,21 @@ This program requires that you install Node.js. From there, you must generate a 
 Once your installs are completed and all files are present, simply launch the terminal and type the command "node fileName.js". Answer the prompts with the verbiage you wish to have for your readme. Make any necessary edits directly within the resulting file.
 
 [Walkthrough Video](https://drive.google.com/file/d/1pqHIV3YjIamCrO_5OfzCa7Bo0fSEph23/view)
+
+### Screenshots of program and resulting files
+example of md file returned
+
+![markdownResult](https://github.com/caitlinbou/readmeGen/blob/master/assets/markdown.png?raw=true)
+preview mode of returned file
+
+![previewResult](https://github.com/caitlinbou/readmeGen/blob/master/assets/preview.png?raw=true)
+questions.js file that houses the questions prompted
+
+![questionsArr](https://github.com/caitlinbou/readmeGen/blob/master/assets/quesSample.png?raw=true)
+template string in index.js and example of terminal prompts in process of being answered
+
+![termPrompts](https://github.com/caitlinbou/readmeGen/blob/master/assets/term.png?raw=true)
+
 ## License 
 
 Copyright 2020 Caitlin Bouroncle
